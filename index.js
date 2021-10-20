@@ -5,3 +5,8 @@ function timeToNow(date){
     return moment(date).toNow(); 
 }
 console.log(timeToNow([2021, 10, 8]));
+
+function timeFromAToB(date1 , date2) {
+    return moment(date1).to(date2)
+}
+console.log(timeFromAToB([2021, 10, 8], [2021, 10, 20]));
